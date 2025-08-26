@@ -6,7 +6,7 @@ module.exports = {
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
-    clean: true, 
+    clean: true,
   },
   module: {
     rules: [
@@ -48,8 +48,12 @@ module.exports = {
       favicon: './src/favicon.png'
     }),
   ],
-  mode: 'development',
-  devtool: 'source-map',
+  devtool: false,
+  performance: {
+    hints: false,
+    maxEntrypointSize: 512000,
+    maxAssetSize: 512000
+  },
   devServer: {
     static: './dist',
     watchFiles: ['src/**/*'],
