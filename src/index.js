@@ -3,7 +3,6 @@ import { Navigation, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-
 import './styles/style.scss'
 
 import './assets/icons/menu.svg';
@@ -21,7 +20,6 @@ import './assets/icons/social_media/twitter.svg';
 import './assets/icons/social_media/facebook.svg';
 import './assets/icons/social_media/instagram.svg';
 import './assets/icons/social_media/github.svg';
-
 
 
 const productSwiper = new Swiper('.products__slider', {
@@ -62,7 +60,6 @@ const reviewSwiper = new Swiper('.reviews__slider', {
     }
 
 });
-
 
 function updateBorders() {
     const items = document.querySelectorAll('.hero__stat');
