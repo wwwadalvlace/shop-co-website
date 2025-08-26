@@ -58,6 +58,9 @@ module.exports = {
         test: /\.(woff|woff2)$/,
         type: 'asset/resource',
         include: path.resolve(__dirname, 'src/assets/fonts'),
+        generator: {
+          filename: 'fonts/[hash][ext]',
+        },
       },
     ],
   },
