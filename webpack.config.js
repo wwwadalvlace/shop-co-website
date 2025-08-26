@@ -23,9 +23,28 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|jpe?g|gif|svg)$/i,
+        test: /\.svg$/,
         type: 'asset',
         include: path.resolve(__dirname, 'src/assets/images'),
+        generator: {
+          filename: 'images/[name]-[hash][ext]'
+        },
+      },
+      {
+        test: /\.(png|jpe?g|webp|tiff?)$/i,
+        type: 'asset',
+        include: path.resolve(__dirname, 'src/assets/images'),
+        generator: {
+          filename: 'images/[name]-[hash][ext]'
+        },
+        use: [
+          {
+            loader: 'webpack-image-resize-loader',
+            options: {
+              quality: 80,
+            }
+          },
+        ],
       },
       {
         test: /\.(scss|css)$/,
@@ -49,11 +68,6 @@ module.exports = {
     }),
   ],
   devtool: false,
-  performance: {
-    hints: false,
-    maxEntrypointSize: 512000,
-    maxAssetSize: 512000
-  },
   devServer: {
     static: './dist',
     watchFiles: ['src/**/*'],

@@ -391,6 +391,10 @@ input {
         background-color: #F0F0F0;
         margin-bottom: 10px;
 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
         width: 198px;
         height: 200px;
         border-radius: 13.42px;
@@ -407,8 +411,12 @@ input {
             }
         }
 
-        &--small img {
-            transform: scale(0.9);
+        &--skinny-jeans img {
+            padding: 14px;
+        }
+
+        &--faded-jeans img {
+            padding: 22px;
         }
     }
 

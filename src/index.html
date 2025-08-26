@@ -98,7 +98,7 @@
                 </div>
 
                 <div class="hero__image-wrapper">
-                    <img class="hero__image" src="<%= require('./assets/images/hero-image.jpg') %>" alt="Hero Image">
+                    <img class="hero__image" src="<%= require('./assets/images/hero-image.jpg?scale=0.6') %>" alt="Hero Image">
                     <div class="hero__star hero__star--left"></div>
                     <div class="hero__star hero__star--right"></div>
                 </div>
@@ -130,7 +130,7 @@
 
                                 <a class="product" href="#">
                                     <div class="product__thumb">
-                                        <img src="<%= require('./assets/images/products/t-shirt-1.png') %>"
+                                        <img src="<%= require('./assets/images/products/t-shirt-1.png?width=400') %>"
                                             alt="T-shirt with Tape">
                                     </div>
                                     <h3 class="product__title">T-shirt with Tape Details</h3>
@@ -153,8 +153,8 @@
 
                             <div class="products__slide swiper-slide">
                                 <a class="product product" href="#">
-                                    <div class="product__thumb product__thumb--small">
-                                        <img src="<%= require('./assets/images/products/jeans-1.png') %>"
+                                    <div class="product__thumb product__thumb--skinny-jeans">
+                                        <img src="<%= require('./assets/images/products/jeans-1.png?width=400') %>"
                                             alt="Skinny Fit Jeans">
                                     </div>
                                     <h3 class="product__title">Skinny Fit Jeans</h3>
@@ -178,7 +178,7 @@
                             <div class="products__slide swiper-slide">
                                 <a class="product" href="#">
                                     <div class="product__thumb">
-                                        <img src="<%= require('./assets/images/products/shirt-1.png') %>"
+                                        <img src="<%= require('./assets/images/products/shirt-1.png?width=400') %>"
                                             alt="Checkered Shirt">
                                     </div>
                                     <h3 class="product__title">Checkered Shirt</h3>
@@ -201,7 +201,7 @@
                             <div class="products__slide swiper-slide">
                                 <a class="product" href="#">
                                     <div class="product__thumb">
-                                        <img src="<%= require('./assets/images/products/t-shirt-2.png') %>"
+                                        <img src="<%= require('./assets/images/products/t-shirt-2.png?width=400') %>"
                                             alt="Sleeve Striped T-shirt">
                                     </div>
                                     <h3 class="product__title">Sleeve Striped T-shirt</h3>
@@ -238,7 +238,7 @@
                             <div class="products__slide swiper-slide">
                                 <a class="product" href="#">
                                     <div class="product__thumb">
-                                        <img src="<%= require('./assets/images/products/shirt-2.png') %>"
+                                        <img src="<%= require('./assets/images/products/shirt-2.png?width=400') %>"
                                             alt="Vertical Striped Shirt">
                                     </div>
                                     <h3 class="product__title">Vertical Striped Shirt</h3>
@@ -262,7 +262,7 @@
                             <div class="products__slide swiper-slide">
                                 <a class="product" href="#">
                                     <div class="product__thumb">
-                                        <img src="<%= require('./assets/images/products/t-shirt-3.png') %>"
+                                        <img src="<%= require('./assets/images/products/t-shirt-3.png?width=400') %>"
                                             alt="Courage Graphic T-shirt">
                                     </div>
                                     <h3 class="product__title">Courage Graphic T-shirt</h3>
@@ -283,7 +283,7 @@
                             <div class="products__slide swiper-slide">
                                 <a class="product" href="#">
                                     <div class="product__thumb">
-                                        <img src="<%= require('./assets/images/products/shorts.png') %>"
+                                        <img src="<%= require('./assets/images/products/shorts.png?width=400') %>"
                                             alt="Loose Fit Bermuda Shorts">
                                     </div>
                                     <h3 class="product__title">Loose Fit Bermuda Shorts</h3>
@@ -303,8 +303,8 @@
 
                             <div class="products__slide swiper-slide">
                                 <a class="product" href="#">
-                                    <div class="product__thumb product__thumb--small">
-                                        <img src="<%= require('./assets/images/products/jeans-2.png') %>"
+                                    <div class="product__thumb product__thumb--faded-jeans">
+                                        <img src="<%= require('./assets/images/products/jeans-2.png?width=400') %>"
                                             alt="Faded Skinny Jeans">
                                     </div>
                                     <h3 class="product__title">Faded Skinny Jeans</h3>
@@ -338,19 +338,19 @@
 
                 <div class="browse__styles">
                     <a class="browse__style browse__style--casual" href="#">
-                        <img src="<%= require('./assets/images/casual.png') %>" alt="Casual">
+                        <img src="<%= require('./assets/images/casual.png?quality=80') %>" alt="Casual" loading="lazy">
                         <span>Casual</span>
                     </a>
                     <a class="browse__style browse__style--formal" href="#">
-                        <img src="<%= require('./assets/images/formal.png') %>" alt="Formal">
+                        <img src="<%= require('./assets/images/formal.png?quality=80') %>" alt="Formal" loading="lazy">
                         <span>Formal</span>
                     </a>
                     <a class="browse__style browse__style--party" href="#">
-                        <img src="<%= require('./assets/images/party.png') %>" alt="Party">
+                        <img src="<%= require('./assets/images/party.png?quality=80') %>" alt="Party" loading="lazy">
                         <span>Party</span>
                     </a>
                     <a class="browse__style browse__style--gym" href="#">
-                        <img src="<%= require('./assets/images/gym.png') %>" alt="Gym">
+                        <img src="<%= require('./assets/images/gym.png?quality=80') %>" alt="Gym" loading="lazy">
                         <span>Gym</span>
                     </a>
                 </div>
