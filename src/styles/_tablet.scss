@@ -1,0 +1,46 @@
+@media (min-width: 768px) {
+
+    .announcement {
+        &__close {
+            display: inline-flex;
+        }
+    }
+
+    .header {
+        &__logo {
+            min-width: 126px;
+        }
+
+        &__search {
+            display: inline-flex;
+        }
+
+        &__nav-bar li:first-child {
+            display: none;
+        }
+    }
+
+    .browse {
+        &__styles {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &__style {
+            &:nth-child(odd) {
+                justify-self: end;
+            }
+
+            &:nth-child(even) {
+                justify-self: start;
+            }
+        }
+    }
+
+    .footer {
+        &__content {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+
+}

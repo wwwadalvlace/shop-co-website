@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>SHOP.CO | Online Shopping for the Latest Clothes & Fashion</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+
+    <section class="announcement">
+        <div class="announcement__container container">
+            <p class="announcement__message">
+                Sign up and get 20% off to your first order.
+                <a href="#" class="announcement__message announcement__message--link">Sign Up Now</a>
+            </p>
+            <button class="announcement__close" aria-label="Close banner">
+                <svg>
+                    <use href="#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+    </section>
+
+    <header class="header">
+        <nav class="header__container container">
+
+            <button class="header__menu-toggle" aria-label="Open menu">
+                <svg>
+                    <use href="#icon-menu"></use>
+                </svg>
+            </button>
+
+            <a href="/" class="header__logo" title="Main page">
+                <img src="<%= require('./assets/images/logo.svg') %>" alt="SHOP.CO Logo">
+            </a>
+
+            <ul class="header__menu-list">
+                <li>
+                    <a href="#">
+                        Shop
+                        <svg>
+                            <use href="#icon-chevron_down"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li><a href="#">On Sale</a></li>
+                <li><a href="#">New Arrivals</a></li>
+                <li><a href="#">Brands</a></li>
+            </ul>
+
+            <input class="header__search" type="text" class="header__search" placeholder="Search for products...">
+
+            <ul class="header__nav-bar">
+                <li><button aria-label="Search">
+                        <svg>
+                            <use href="#icon-search"></use>
+                        </svg></button></li>
+                <li><a href="#" aria-label="Cart">
+                        <svg>
+                            <use href="#icon-cart"></use>
+                        </svg></a></li>
+                <li><a href="#" aria-label="Account">
+                        <svg>
+                            <use href="#icon-account"></use>
+                        </svg></a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero__container container">
+                <h1 class="hero__title">FIND CLOTHES<br>THAT MATCHES<br>YOUR STYLE</h1>
+                <p class="hero__subtitle">Browse through our diverse range of meticulously crafted garments, designed to
+                    bring out your individuality and cater to your sense of style.</p>
+
+                <a href="#" class="hero__shop-now">
+                    Shop Now
+                </a>
+
+                <div class="hero__stats">
+                    <div class="hero__stat">
+                        <span class="hero__stat-number">200+</span>
+                        <span class="hero__stat-label">International Brands</span>
+                    </div>
+                    <div class="hero__stat">
+                        <span class="hero__stat-number">2,000+</span>
+                        <span class="hero__stat-label">High-Quality Products</span>
+                    </div>
+                    <div class="hero__stat">
+                        <span class="hero__stat-number">30,000+</span>
+                        <span class="hero__stat-label">Happy Customers</span>
+                    </div>
+                </div>
+
+                <div class="hero__image-wrapper">
+                    <img class="hero__image" src="<%= require('./assets/images/hero-image.jpg') %>" alt="Hero Image">
+                    <div class="hero__star hero__star--left"></div>
+                    <div class="hero__star hero__star--right"></div>
+                </div>
+        </section>
+
+        <section class="brands">
+            <div class="brands__container container">
+                <ul class="brands__list">
+                    <li><img src="<%= require('./assets/images/brands/versace.svg') %>" alt="versace"></li>
+                    <li><img src="<%= require('./assets/images/brands/zara.svg') %>" alt="zara"></li>
+                    <li><img src="<%= require('./assets/images/brands/gucci.svg') %>" alt="gucci"></li>
+                    <li><img src="<%= require('./assets/images/brands/prada.svg') %>" alt="prada">
+                        <img src="<%= require('./assets/images/brands/calvinklein.svg') %>" alt="calvinklein">
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+
+        <section class="products">
+            <div class="products__container container">
+
+                <div class="products__group">
+                    <h2 class="products__title">NEW ARRIVALS</h2>
+
+                    <div class="products__slider swiper">
+                        <div class="swiper-wrapper">
+                            <div class="products__slide swiper-slide">
+
+                                <a class="product" href="#">
+                                    <div class="product__thumb">
+                                        <img src="<%= require('./assets/images/products/t-shirt-1.png') %>"
+                                            alt="T-shirt with Tape">
+                                    </div>
+                                    <h3 class="product__title">T-shirt with Tape Details</h3>
+                                    <div class="product__review">
+                                        <div class="product__rating rating">
+                                            <span class="rating__star rating__star--full"></span>
+                                            <span class="rating__star rating__star--full"></span>
+                                            <span class="rating__star rating__star--full"></span>
+                                            <span class="rating__star rating__star--full"></span>
+                                            <span class="rating__star rating__star--half"></span>
+                                        </div>
+                                        <span class="product__overall-rating">4.5/<span>5</span></span>
+                                    </div>
+                                    <div class="product__pricing">
+                                        <span class="product__price product__price--current">$120</span>
+                                    </div>
+                                </a>
+                            </div>
+
+
+                            <div class="products__slide swiper-slide">
+                                <a class="product product" href="#">
+                                    <div class="product__thumb product__thumb--small">
+                                        <img src="<%= require('./assets/images/products/jeans-1.png') %>"
+                                            alt="Skinny Fit Jeans">
+                                    </div>
+                                    <h3 class="product__title">Skinny Fit Jeans</h3>
+                                    <div class="product__review">
+                                        <div class="product__rating rating">
+                                            <span class="rating__star rating__star--full"></span>
+                                            <span class="rating__star rating__star--full"></span>
+                                            <span class="rating__star rating__star--full"></span>
+                                            <span class="rating__star rating__star--half"></span>
+                                        </div>
+                                        <span class="product__overall-rating">3.5/<span>5</span></span>
+                                    </div>
+                                    <div class="product__pricing">
+                                        <span class="product__price product__price--current">$240</span>
+                                        <span class="product__price product__price--old">$260</span>
+                                        <span class="product__discount">-20%</span>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="products__slide swiper-slide">
+                                <a class="product" href="#">
+                                    <div class="product__thumb">
+                                        <img src="<%= require('./assets/images/products/shirt-1.png') %>"
+                                            alt="Checkered Shirt">
+                                    </div>
+                                    <h3 class="product__title">Checkered Shirt</h3>
+                                    <div class="product__review">
+                                        <div class="product__rating rating">
+                                            <span class="rating__star rating__star--full"></span>
+                                            <span class="rating__star rating__star--full"></span>
+                                            <span class="rating__star rating__star--full"></span>
+                                            <span class="rating__star rating__star--full"></span>
+                                            <span class="rating__star rating__star--half"></span>
+                                        </div>
+                                        <span class="product__overall-rating">4.5/<span>5</span></span>
+                                    </div>
+                                    <div class="product__pricing">
+                                        <span class="product__price product__price--current">$180</span>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="products__slide swiper-slide">
+                                <a class="product" href="#">
+                                    <div class="product__thumb">
+                                        <img src="<%= require('./assets/images/products/t-shirt-2.png') %>"
+                                            alt="Sleeve Striped T-shirt">
+                                    </div>
+                                    <h3 class="product__title">Sleeve Striped T-shirt</h3>
+                                    <div class="product__review">
+                                        <div class="product__rating rating">
+                                            <span class="rating__star rating__star--full"></span>
+                                            <span class="rating__star rating__star--full"></span>
+                                            <span class="rating__star rating__star--full"></span>
+                                            <span class="rating__star rating__star--full"></span>
+                                            <span class="rating__star rating__star--half"></span>
+                                        </div>
+                                        <span class="product__overall-rating">4.5/<span>5</span></span>
+                                    </div>
+                                    <div class="product__pricing">
+                                        <span class="product__price product__price--current">$130</span>
+                                        <span class="product__price product__price--old">$160</span>
+                                        <span class="product__discount">-30%</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="products__view-all" href="#">View All</a>
+                </div>
+
+                <div class="products__separator"></div>
+
+                <div class="products__group">
+                    <h2 class="products__title">TOP SELLING</h2>
+
+                    <div class="products__slider swiper">
+                        <div class="swiper-wrapper">
+                            <div class="products__slide swiper-slide">
+                                <a class="product" href="#">
+                                    <div class="product__thumb">
+                                        <img src="<%= require('./assets/images/products/shirt-2.png') %>"
+                                            alt="Vertical Striped Shirt">
+                                    </div>
+                                    <h3 class="product__title">Vertical Striped Shirt</h3>
+                                    <div class="product__review">
+                                        <div class="product__rating rating">
+                                            <span class="rating__star rating__star--full"></span>
+                                            <span class="rating__star rating__star--full"></span>
+                                            <span class="rating__star rating__star--full"></span>
+                                            <span class="rating__star rating__star--full"></span>
+                                            <span class="rating__star rating__star--full"></span>
+                                        </div>
+                                        <span class="product__overall-rating">5.0/<span>5</span></span>
+                                    </div>
+                                    <div class="product__pricing">
+                                        <span class="product__price product__price--current">$212</span>
+                                        <span class="product__price product__price--old">$235</span>
+                                        <span class="product__discount">-20%</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="products__slide swiper-slide">
+                                <a class="product" href="#">
+                                    <div class="product__thumb">
+                                        <img src="<%= require('./assets/images/products/t-shirt-3.png') %>"
+                                            alt="Courage Graphic T-shirt">
+                                    </div>
+                                    <h3 class="product__title">Courage Graphic T-shirt</h3>
+                                    <div class="product__review">
+                                        <div class="product__rating rating">
+                                            <span class="rating__star rating__star--full"></span>
+                                            <span class="rating__star rating__star--full"></span>
+                                            <span class="rating__star rating__star--full"></span>
+                                            <span class="rating__star rating__star--full"></span>
+                                        </div>
+                                        <span class="product__overall-rating">4.0/<span>5</span></span>
+                                    </div>
+                                    <div class="product__pricing">
+                                        <span class="product__price product__price--current">$145</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="products__slide swiper-slide">
+                                <a class="product" href="#">
+                                    <div class="product__thumb">
+                                        <img src="<%= require('./assets/images/products/shorts.png') %>"
+                                            alt="Loose Fit Bermuda Shorts">
+                                    </div>
+                                    <h3 class="product__title">Loose Fit Bermuda Shorts</h3>
+                                    <div class="product__review">
+                                        <div class="product__rating rating">
+                                            <span class="rating__star rating__star--full"></span>
+                                            <span class="rating__star rating__star--full"></span>
+                                            <span class="rating__star rating__star--full"></span>
+                                        </div>
+                                        <span class="product__overall-rating">3.0/<span>5</span></span>
+                                    </div>
+                                    <div class="product__pricing">
+                                        <span class="product__price product__price--current">$80</span>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="products__slide swiper-slide">
+                                <a class="product" href="#">
+                                    <div class="product__thumb product__thumb--small">
+                                        <img src="<%= require('./assets/images/products/jeans-2.png') %>"
+                                            alt="Faded Skinny Jeans">
+                                    </div>
+                                    <h3 class="product__title">Faded Skinny Jeans</h3>
+                                    <div class="product__review">
+                                        <div class="product__rating rating">
+                                            <span class="rating__star rating__star--full"></span>
+                                            <span class="rating__star rating__star--full"></span>
+                                            <span class="rating__star rating__star--full"></span>
+                                            <span class="rating__star rating__star--full"></span>
+                                            <span class="rating__star rating__star--half"></span>
+                                        </div>
+                                        <span class="product__overall-rating">4.5/<span>5</span></span>
+                                    </div>
+                                    <div class="product__pricing">
+                                        <span class="product__price product__price--current">$210</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="products__view-all" href="#">View All</a>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="browse">
+            <div class="browse__container container">
+                <h2 class="browse__title">BROWSE BY DRESS STYLE</h2>
+
+                <div class="browse__styles">
+                    <a class="browse__style browse__style--casual" href="#">
+                        <img src="<%= require('./assets/images/casual.png') %>" alt="Casual">
+                        <span>Casual</span>
+                    </a>
+                    <a class="browse__style browse__style--formal" href="#">
+                        <img src="<%= require('./assets/images/formal.png') %>" alt="Formal">
+                        <span>Formal</span>
+                    </a>
+                    <a class="browse__style browse__style--party" href="#">
+                        <img src="<%= require('./assets/images/party.png') %>" alt="Party">
+                        <span>Party</span>
+                    </a>
+                    <a class="browse__style browse__style--gym" href="#">
+                        <img src="<%= require('./assets/images/gym.png') %>" alt="Gym">
+                        <span>Gym</span>
+                    </a>
+                </div>
+
+        </section>
+
+        <section class="reviews">
+            <div class="reviews__container container">
+                <div class="reviews__header">
+                    <h2 class="reviews__title">OUR HAPPY CUSTOMERS</h2>
+                    <div class="reviews__slider-controls slider-controls">
+                        <button class="reviews__slider-btn prev" aria-label="Previous review" type="button">
+                            <svg width="24" height="24">
+                                <use href="#icon-arrow_left"></use>
+                            </svg>
+                        </button>
+                        <button class="reviews__slider-btn next" aria-label="Next review" type="button">
+                            <svg width="24" height="24">
+                                <use href="#icon-arrow_right"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="reviews__slider swiper">
+                    <div class="swiper-wrapper">
+                        <div class="reviews__slide swiper-slide">
+                            <div class="review">
+                                <div class="review__rating rating">
+                                    <span class="rating__star rating__star--full"></span>
+                                    <span class="rating__star rating__star--full"></span>
+                                    <span class="rating__star rating__star--full"></span>
+                                    <span class="rating__star rating__star--full"></span>
+                                    <span class="rating__star rating__star--full"></span>
+                                </div>
+
+                                <p class="review__name">Sarah M.</p>
+
+                                <p class="review__text">
+                                    "I'm blown away by the quality and style of the clothes I received from
+                                    Shop.co.
+                                    From casual wear to elegant dresses, every piece
+                                    I've bought has exceeded my expectations.”
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="reviews__slide swiper-slide">
+                            <div class="review">
+                                <div class="review__rating rating">
+                                    <span class="rating__star rating__star--full"></span>
+                                    <span class="rating__star rating__star--full"></span>
+                                    <span class="rating__star rating__star--full"></span>
+                                    <span class="rating__star rating__star--full"></span>
+                                    <span class="rating__star rating__star--full"></span>
+                                </div>
+
+                                <p class="review__name">Alex K.</p>
+
+                                <p class="review__text">
+                                    "Finding clothes that align with my personal
+                                    style used to be a challenge until I discovered
+                                    Shop.co. The range of options they offer is truly
+                                    remarkable, catering to a variety of tastes and occasions."
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="reviews__slide swiper-slide">
+                            <div class="review">
+                                <div class="review__rating rating">
+                                    <span class="rating__star rating__star--full"></span>
+                                    <span class="rating__star rating__star--full"></span>
+                                    <span class="rating__star rating__star--full"></span>
+                                    <span class="rating__star rating__star--full"></span>
+                                    <span class="rating__star rating__star--full"></span>
+                                </div>
+
+                                <p class="review__name">James L.</p>
+
+                                <p class="review__text">
+                                    "As someone who's always on the lookout for
+                                    unique fashion pieces, I'm thrilled to have stumbled
+                                    upon Shop.co. The selection of clothes is not only
+                                    diverse but also on-point with the latest trends."
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="reviews__slide swiper-slide">
+                            <div class="review">
+                                <div class="review__rating rating">
+                                    <span class="rating__star rating__star--full"></span>
+                                    <span class="rating__star rating__star--full"></span>
+                                    <span class="rating__star rating__star--full"></span>
+                                    <span class="rating__star rating__star--full"></span>
+                                    <span class="rating__star rating__star--full"></span>
+                                </div>
+
+                                <p class="review__name">Olga P.</p>
+
+                                <p class="review__text">
+                                    "Great shopping experience — fast delivery and excellent
+                                    customer support!"
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="reviews__slide swiper-slide">
+                            <div class="review">
+                                <div class="review__rating rating">
+                                    <span class="rating__star rating__star--full"></span>
+                                    <span class="rating__star rating__star--full"></span>
+                                    <span class="rating__star rating__star--full"></span>
+                                    <span class="rating__star rating__star--full"></span>
+                                    <span class="rating__star rating__star--full"></span>
+                                </div>
+
+                                <p class="review__name">Michael S.</p>
+
+                                <p class="review__text">
+                                    "Fantastic selection and great prices. The product
+                                    descriptions are accurate and the items arrived in
+                                    perfect condition. Highly recommended."
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="reviews__slide swiper-slide">
+                            <div class="review">
+                                <div class="review__rating rating">
+                                    <span class="rating__star rating__star--full"></span>
+                                    <span class="rating__star rating__star--full"></span>
+                                    <span class="rating__star rating__star--full"></span>
+                                    <span class="rating__star rating__star--full"></span>
+                                    <span class="rating__star rating__star--full"></span>
+                                </div>
+
+                                <p class="review__name">Sarah M.</p>
+
+                                <p class="review__text">
+                                    "I'm blown away by the quality and style of the clothes I received from
+                                    Shop.co.
+                                    From casual wear to elegant dresses, every piece
+                                    I've bought has exceeded my expectations.”
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="reviews__slide swiper-slide">
+                            <div class="review">
+                                <div class="review__rating rating">
+                                    <span class="rating__star rating__star--full"></span>
+                                    <span class="rating__star rating__star--full"></span>
+                                    <span class="rating__star rating__star--full"></span>
+                                    <span class="rating__star rating__star--full"></span>
+                                    <span class="rating__star rating__star--full"></span>
+                                </div>
+
+                                <p class="review__name">Alex K.</p>
+
+                                <p class="review__text">
+                                    "Finding clothes that align with my personal
+                                    style used to be a challenge until I discovered
+                                    Shop.co. The range of options they offer is truly
+                                    remarkable, catering to a variety of tastes and occasions."
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="reviews__slide swiper-slide">
+                            <div class="review">
+                                <div class="review__rating rating">
+                                    <span class="rating__star rating__star--full"></span>
+                                    <span class="rating__star rating__star--full"></span>
+                                    <span class="rating__star rating__star--full"></span>
+                                    <span class="rating__star rating__star--full"></span>
+                                    <span class="rating__star rating__star--full"></span>
+                                </div>
+
+                                <p class="review__name">James L.</p>
+
+                                <p class="review__text">
+                                    "As someone who's always on the lookout for
+                                    unique fashion pieces, I'm thrilled to have stumbled
+                                    upon Shop.co. The selection of clothes is not only
+                                    diverse but also on-point with the latest trends."
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="reviews__slide swiper-slide">
+                            <div class="review">
+                                <div class="review__rating rating">
+                                    <span class="rating__star rating__star--full"></span>
+                                    <span class="rating__star rating__star--full"></span>
+                                    <span class="rating__star rating__star--full"></span>
+                                    <span class="rating__star rating__star--full"></span>
+                                    <span class="rating__star rating__star--full"></span>
+                                </div>
+
+                                <p class="review__name">Olga P.</p>
+
+                                <p class="review__text">
+                                    "Great shopping experience — fast delivery and excellent
+                                    customer support!"
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="reviews__slide swiper-slide">
+                            <div class="review">
+                                <div class="review__rating rating">
+                                    <span class="rating__star rating__star--full"></span>
+                                    <span class="rating__star rating__star--full"></span>
+                                    <span class="rating__star rating__star--full"></span>
+                                    <span class="rating__star rating__star--full"></span>
+                                    <span class="rating__star rating__star--full"></span>
+                                </div>
+
+                                <p class="review__name">Michael S.</p>
+
+                                <p class="review__text">
+                                    "Fantastic selection and great prices. The product
+                                    descriptions are accurate and the items arrived in
+                                    perfect condition. Highly recommended."
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="subscribe">
+            <div class="subscribe__container container">
+                <h2 class="subscribe__title">STAY UPTO DATE ABOUT OUR LATEST OFFERS</h2>
+                <form class="subscribe__form">
+                    <input class="subscribe__field subscribe__field--input" type="email"
+                        placeholder="Enter your email address" required>
+                    <button class="subscribe__field subscribe__field--btn" type="submit">Subscribe to
+                        Newsletter</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer__container container">
+            <div class="footer__content">
+                <div class="footer__header">
+                    <div class="footer__logo">
+                        <img src="<%= require('./assets/images/logo.svg') %>" alt="SHOP.CO Logo">
+                    </div>
+                    <p class="footer__description">We have clothes that suits your style
+                        and which you’re proud to wear.
+                        From women to men.</p>
+                    <div class="footer__social-media">
+                        <svg>
+                            <a href="https://twitter.com" title="Twitter" target="_blank">
+                                <use href="#icon-twitter"></use>
+                            </a>
+                        </svg>
+                        <svg>
+                            <a href="https://facebook.com" title="Facebook" target="_blank">
+                                <use href="#icon-facebook"></use>
+                            </a>
+                        </svg>
+                        <svg>
+                            <a href="https://instagram.com" title="Instagram" target="_blank">
+                                <use href="#icon-instagram"></use>
+                            </a>
+                        </svg>
+                        <svg>
+                            <a href="https://github.com/wwwadalvlace" title="Github" target="_blank">
+                                <use href="#icon-github"></use>
+                            </a>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="footer__links footer__links--company">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Works</a></li>
+                        <li><a href="#">Career</a></li>
+                    </ul>
+                </div>
+                <div class="footer__links footer__links--help">
+                    <h3>Help</h3>
+                    <ul>
+                        <li><a href="#">Customer Support</a></li>
+                        <li><a href="#">Delivery Details</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer__links footer__links--faq">
+                    <h3>FAQ</h3>
+                    <ul>
+                        <li><a href="#">Account</a></li>
+                        <li><a href="#">Manage Deliveries</a></li>
+                        <li><a href="#">Orders</a></li>
+                        <li><a href="#">Payments</a></li>
+                    </ul>
+                </div>
+                <div class="footer__links footer__links--resources">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Free eBooks</a></li>
+                        <li><a href="#">Development Tutorial</a></li>
+                        <li><a href="#">How to - Blog</a></li>
+                        <li><a href="#">Youtube Playlist</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="footer__separator"></div>
+
+            <div class="footer__bottom">
+                <p class="footer__copyright">Shop.co © 2000-2023, All Rights Reserved</p>
+
+                <div class="footer__payments">
+                    <img src="<%= require('./assets/images/payments/visa.svg') %>" alt="Visa">
+                    <img src="<%= require('./assets/images/payments/mastercard.svg') %>" alt="Mastercard">
+                    <img src="<%= require('./assets/images/payments/paypal.svg') %>" alt="Paypal">
+                    <img src="<%= require('./assets/images/payments/applepay.svg') %>" alt="Apple Pay">
+                    <img src="<%= require('./assets/images/payments/googlepay.svg') %>" alt="Google Pay">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
